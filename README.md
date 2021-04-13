@@ -2,5 +2,11 @@
 Creacion y configuracion de un websocket en node
 
 ## Paquetes
-```npm i express cors dotenv```
+1. ```npm i express cors dotenv```
+2. [SocketIo](https://www.npmjs.com/package/socket.io) ```npm install socket.io````
+
+
+## Validaciones
+
+Verificar el servidor local de [socket io](http://localhost:8080/socket.io/socket.io.js)
 
