@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 
+const { socketController } = require('../controllers/socket.controller')
+
 class Server {
 
     constructor() {
@@ -16,20 +18,27 @@ class Server {
 
         // Rutas de mi aplicación
         this.routes();
-    }
 
+        //Eventos de Socket
+        this.sockets()
+    }
 
     middlewares() {
         // CORS
         this.app.use(cors());
-        
+
         // Directorio Público
-        this.app.use(express.static('public'));        
+        this.app.use(express.static('public'));
     }
 
     routes() {
         //this.app.use(this.paths.auth, require('../routes/auth'));
     }
+
+    sockets() {
+        this.io.on("connection", socketController)
+    }
+
 
     listen() {
         this.server.listen(this.port, () => {
