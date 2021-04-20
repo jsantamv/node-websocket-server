@@ -1,29 +1,18 @@
 {
-  "name": "node-websocket-server",
+  "name": "09-socket-colas",
   "version": "1.0.0",
-  "description": "Creacion y configuracion de un websocket en node",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jsantamv/node-websocket-server.git"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jsantamv/node-websocket-server/issues"
-  },
-  "homepage": "https://github.com/jsantamv/node-websocket-server#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "socket.io": "^4.0.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
+    "socket.io": "^3.1.1"
   }
 }
